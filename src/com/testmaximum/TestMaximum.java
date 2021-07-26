@@ -3,24 +3,25 @@ package com.testmaximum;
 public class TestMaximum {
 public static void main(String[] args) {
 	
-	Float number1 = 5.1f;
-	Float number2 = 10.2f;
-	Float number3 = 15.3f;
-	Float maximumNum = testMax(number1,number2,number3);
-	System.out.println("Maximum Float Number is: " +maximumNum);
+	String name1 = "Omkar";
+	String name2 = "Vikas";
+	String name3 = "Papal";
+	String maximumString = testMax(name1,name2,name3);
+	System.out.println("Maximum Length String is: " +maximumString);
 	}
 
-	public static Float testMax(Float number1, Float number2, Float number3) {
-		Float maximumnumber = number1;
-		if(number2.compareTo(maximumnumber) > 0);
+	public static String testMax(String name1, String name2, String name3) {
+		
+		String maximumString = name1;
+		if(name2.compareTo(maximumString) > 0);
 		{
-			maximumnumber = number2;
+			maximumString = name2;
 		}
-		if(number3.compareTo(maximumnumber) > 0);
+		if(name3.compareTo(maximumString) > 0);
 		{
-			maximumnumber = number3;
+			maximumString = name3;
 		}
-		return maximumnumber;
+		return maximumString;
 	}
 }
 
